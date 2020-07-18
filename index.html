@@ -8,7 +8,7 @@
 
     <script>
       function onSubmit(token) {
-        document.getElementById("demo-form").submit();
+        document.getElementById("form-internal").submit();
       }
     </script>
 
@@ -51,7 +51,7 @@
     </section>
     <section id="form">
       <h2>Zgłoś kremlówkę</h2>
-      <form action="index.html" method="post">
+      <form action="index.html" method="post" id="form-internal">
         <input type="text" name="miasto" value="Miasto"><br><br>
         <input type="text" name="adres" value="Adres - ulica i nr domu / współrzędne geo"><br><br>
         <input type="file" name="pictures">
