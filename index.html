@@ -4,6 +4,10 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Zgłoś kremlówkę</title>
+    <script src="https://www.google.com/recaptcha/api.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="script.js"></script>
+
     <link href="https://fonts.googleapis.com/css?family=Bubblegum+Sans|Livvic&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="main.css" type="text/css" />
   </head>
@@ -43,10 +47,16 @@
     </section>
     <section id="form">
       <h2>Zgłoś kremlówkę</h2>
-      <form action="index.html" method="post">
+      <form action="index.html" method="post" id="form-internal">
         <input type="text" name="miasto" value="Miasto"><br><br>
         <input type="text" name="adres" value="Adres - ulica i nr domu / współrzędne geo"><br><br>
         <input type="file" name="pictures">
+        
+        <button class="g-recaptcha" 
+        data-sitekey="6Leuz7IZAAAAACDMFrztKPmchy4YFgHK65FyY00u" 
+        data-callback='onSubmit' 
+        data-action='submit'>Submit</button>
+
       </form>
     </section>
 
