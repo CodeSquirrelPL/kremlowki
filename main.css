@@ -38,45 +38,13 @@ ul {
   list-style: none inside none;
 }
 
-.section-container {
-  display: flex;
-  justify-content: center;
-  align-content: stretch;
-  flex-flow: row wrap;
-}
-
-.section-container__block {
-
-  padding: 2rem;
-  margin: 1rem;
-  flex: 1 1 0;
-  text-align: center;
-}
-
-.section-container__block--project {
-  border-color: white;
-}
-
-
-.nav__button:hover, :focus {
-  color: blue;
-}
-
-.project__links {
-  padding-top: 0.5em;
-}
-
-.project__link:hover, :focus {
-  color: blue;
-  cursor: pointer;
+#wyszukiwarka {
+  display: none;
 }
 
 footer {
+  border-top: lightgray solid 1px;
+  border-bottom: lightgray solid 1px;
+  padding: 10px;
   text-align: center;
-}
-
-@media all and (max-width: 550px) {
-  .section-container {
-    flex-direction: column;
-  }
 }
