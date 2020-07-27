@@ -4,6 +4,10 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Zgłoś kremlówkę</title>
+    <script src="https://www.google.com/recaptcha/api.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="script.js"></script>
+
     <link href="https://fonts.googleapis.com/css?family=Bubblegum+Sans|Livvic&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="main.css" type="text/css" />
   </head>
@@ -54,6 +58,19 @@
       <h2>debunk ściem OI</h2>
       Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
     </section>
+    <section id="form">
+      <h2>Zgłoś kremlówkę</h2>
+      <form action="index.html" method="post" id="form-internal">
+        <input type="text" name="miasto" value="Miasto"><br><br>
+        <input type="text" name="adres" value="Adres - ulica i nr domu / współrzędne geo"><br><br>
+        <input type="file" name="pictures">
+        
+        <button class="g-recaptcha" 
+        data-sitekey="6Leuz7IZAAAAACDMFrztKPmchy4YFgHK65FyY00u" 
+        data-callback='onSubmit' 
+        data-action='submit'>Submit</button>
+
+      </form>
     <section id="instrukcja">
       <h2>instrukcja zgłoszenia, jakieś wzory pism na kiju</h2>
       <h3>dżem truskawkowy</h3>
